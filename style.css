@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #434343;
+}
+
+body .btn-style{
+    padding: .8rem 1rem;
+    background-color: rgb(34, 162, 197);
+    border-radius: .7rem;
+    border: none;
+    outline: none;
+    margin: 2rem auto;
+    font-size: 1.1em;
+    font: 600;
+    cursor: pointer;
+    transform: translateX(40%);
+}
+.btn-style:hover{
+    background-color: rgb(2, 82, 104);
+    color: #fff;
+}
+
+
+
+.watch-box{
+    opacity: 0;
+    width: 40dvw;
+    height: 21dvh;
+    border-radius: .5rem;
+    background-color: #242323;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border: 3px solid yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 3px 4px 2px rgb(66, 66, 55); */
+}
+
+.watch-box::after{
+    content: ' ';
+    width: 30dvw;
+    height: 22px;
+    border-radius: 1rem;
+    background-color: darkorange;
+    position: absolute;
+    top: 7.2rem;
+    left: 3.8rem ;
+    z-index: -1;
+    box-shadow: 0px 5px 2px rgb(73, 73, 28);
+}
+
+.time-data{
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font: 700;
+    
+}
+
+/* Timer Styling... */
+
+.timer{
+    width: 22dvw;
+    height: 80dvh;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #242323;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    box-shadow: 3px 5px 8px rgb(5, 5, 3);
+    color: #fff;
+    text-align: center;    
+}
+.timer p{
+    font-size: 4em;
+    font: 700;
+    margin: 1rem auto;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+    margin: 2.5rem auto;
+}
+
+.btns button{
+    padding: .5rem 0;
+    border-radius: .7rem;
+    border: none;
+    outline: none;
+    margin: 0 .3rem 0 .3rem;
+    font-size: 1em;
+    font: 600;
+    cursor: pointer;
+}
+.btns button:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.reset-value .paragraph{
+    color: #fff;
+    margin: .5rem auto;
+    font-size: small;
+}
